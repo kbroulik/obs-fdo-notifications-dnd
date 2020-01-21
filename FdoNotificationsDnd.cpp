@@ -92,6 +92,7 @@ bool obs_module_load()
 
     s_connection = dbus_bus_get(DBUS_BUS_SESSION, &err);
     if (dbus_error_is_set(&err)) {
+        std::cerr << k_debug << "Failed to connect to session DBus: " << err.message << std::endl;
         dbus_error_free(&err);
         return false;
     }
@@ -110,7 +111,9 @@ void obs_module_unload()
         return;
     }
 
-    dbus_connection_close(s_connection);
+    uninhibit();
+
+    dbus_connection_unref(s_connection);
     s_connection = nullptr;
 }
 
