@@ -1,7 +1,7 @@
 # OBS FDO Notifications DND
-*(also: OBS Freedesktop Notifications Do Not Disturb)*
+*(under the cumbersome name of: OBS Freedesktop Notifications Do Not Disturb)*
 
-This provides an [OBS](https://obsproject.com/) plug-in for automatically enabling "do not disturb" mode on supported desktops (such as [KDE Plasma](https://kde.org/plasma-desktop) 5.16 or newer) while a stream or recording is in progress.
+This provides an [Open Broadcaster Software Studio](https://obsproject.com/) plug-in for automatically enabling "do not disturb" mode on supported desktops (such as [KDE Plasma](https://kde.org/plasma-desktop) 5.16 or newer) while a stream or recording is in progress.
 
 ![Screenshot with KDE Plasma's notification center stating "Do not disturb while OBS is active (Recording in progress)"](obs_dnd_screenshot.png?raw=true "Recording in progress")
 
