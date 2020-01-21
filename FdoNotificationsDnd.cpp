@@ -235,4 +235,5 @@ bool uninhibit()
     }
 
     s_cookie = 0;
+    return true;
 }
